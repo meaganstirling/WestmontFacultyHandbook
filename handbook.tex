@@ -11,8 +11,13 @@
 \usepackage{array}
 
 % https://ctan.math.washington.edu/tex-archive/obsolete/macros/latex/contrib/datetime/datetime.pdf
-\usepackage{datetime}
-\settimeformat{hhmmsstime}
+%\usepackage{datetime}
+\usepackage[useregional]{datetime2}
+%\usdate
+%\settimeformat{hhmmsstimeZ}
+
+% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+\usepackage{wrapfig}
 
 \usepackage[pdftex, breaklinks=true]{hyperref}
 \hypersetup{
@@ -147,8 +152,8 @@ This Faculty Handbook is not a contract of employment.  Certain terms of employm
 \begin{document}
 
 \fancyhf{} %clear all header and footer fields
-\lhead{Faculty Handbook}
-\rhead{\today}
+\lhead{Faculty Handbook, Version: Beta Release Candidate}
+\rhead{Typeset: \DTMnow~Earth}
 \cfoot{\thepage}
 
 \renewcommand{\contentsname}{Table of Contents}
@@ -2527,6 +2532,41 @@ This Faculty Handbook is not a contract of employment.  Certain terms of employm
 		v
 
 
+
+\section{About this document}
+	\begin{wrapfigure}{o}{0.3\textwidth}
+		\vspace{-30pt}
+		\begin{centering}
+			\includegraphics[width=2.5in]{images/qr_code_github_repo.png}
+		\end{centering}
+		\vspace{-30pt}
+		\caption{Link to document change management system on Github}
+		\label{fig:qr_repo}
+		\vspace{-10pt}
+	\end{wrapfigure}
+	This document is an official governing document for Westmont College so changes are carefully managed and subject to a formal approval process.
+	To support the integrity of the document, it is stored in a Github repository which functions as its change management system and supports transparent visibility into any document alterations.
+	The original LaTeX source documents can be found in that repository located here: \href{https://github.com/djp3/WestmontFacultyHandbook}{https://github.com/djp3/WestmontFacultyHandbook} (qr code in Figure \ref{fig:qr_repo}).
+
+	\subsection{Current Version}
+		\begin{wrapfigure}{o}{0.3\textwidth}
+			\vspace{-30pt}
+			\begin{center}
+				\includegraphics[width=2.5in]{images/qr_code_current_release.png}
+			\end{center}
+			\vspace{-30pt}
+			\caption{Most recent official version of this document}
+			\label{fig:qr_current}
+			\vspace{-10pt}
+		\end{wrapfigure}
+		To make sure that you have the latest version of this document, compare the version and date in the header of this document with the dates of the official versions that have been released.
+		All released versions can be found in the releases folder of the Github repository: \href{https://github.com/djp3/WestmontFacultyHandbook/tree/main/releases}{link}.
+
+		As a convenience, the following link is designed to connect to the most current version of the handbook:
+		\href{https://github.com/djp3/WestmontFacultyHandbook/blob/main/releases/handbook.current.pdf}{current version} (qr code in Figure \ref{fig:qr_current}).
+
+	\subsection{Proposing Changed}
+		Make a pull request.
 
 
 		\bibliographystyle{abbrv}
