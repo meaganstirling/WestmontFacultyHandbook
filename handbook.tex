@@ -45,8 +45,8 @@
 % https://tex.stackexchange.com/a/94404/149539
 \usepackage{titlesec}
 
-\setcounter{secnumdepth}{6}
-\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -64,6 +64,10 @@
 \renewcommand{\thesubsubparagraph}{\thesubparagraph.\arabic{subsubparagraph}}
 \titleformat{\subsubparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubsubparagraph}{1em}{}
 \titlespacing*{\subsubparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+
+\makeatletter\def\toclevel@subsubparagraph{6}\makeatother
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 % https://tex.stackexchange.com/a/317492/149539
@@ -192,6 +196,8 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 %				\subparagraph{Example sub-paragraph}
 %					\subsubparagraph{Example sub-paragraph}
 
+\donNote{ I want to change all the "his" "his or her" to "their"}
+
 \section{HISTORY, MISSION, GENERAL ORGANIZATION AND GOVERNANCE}
 	\subsection{History}
 
@@ -200,6 +206,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 		Christian faith and tradition. Many were founded primarily for the training of
 		ministers, missionaries, and teachers.
 
+		\donNote{Can we use Ruth Kerr's actual name? "founded by Mrs. Ruth Kerr"}
 		The Bible Missionary Institute, established in 1937 in Los Angeles, was the
 		direct antecedent to Westmont. It was founded by Mrs. Alexander Kerr who
 		envisioned a college for training men and women for full-time Christian service,
@@ -258,7 +265,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 			Westmont is a member of the Independent Colleges of Southern California; the Association of Independent California Colleges and Universities; the Christian College Consortium; the Council of Christian Colleges and Universities, Council of Independent Colleges, and National Association of Intercollegiate Athletics and the Annapolis Group of national liberal arts colleges.  Its financial policies are in accordance with those of the Evangelical Council for Financial Accountability (ECFA).
 	\subsection{College Organization}
 		\subsubsection{Board of Trustees}
-			\begin{enumerate}[label=\alph*)]
+			\begin{enumerate}
 				\item{
 					The Westmont College Board of Trustees holds in trust the physical and financial assets of the College and has power of review and veto in relation to policy and
 					programs.
@@ -268,43 +275,36 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					elected to three-year terms, and one-third of the members are elected annually.
 				}
 				\item{
-					Westmont College trustees are knowledgeable of, and committed to, the central
-					and strategic role education plays in contemporary society and the crucial
-					contributions of Christian higher education to the church and its work.  The
-					trustees affirm the College's Christian liberal arts philosophy and programs,
-					and support the framework of academic governance shared with the faculty and
-					administration.
+					Westmont College trustees are knowledgeable of, and committed to, the central and strategic role education plays in contemporary society and the crucial contributions of Christian higher education to the church and its work.  The trustees affirm the College's Christian liberal arts philosophy and programs, and support the framework of academic governance shared with the faculty and administration.
 				}
 				\item{
-					It is essential that trustees be persons of genuine Christian faith, who accept
-					without reservation the Articles of Faith, and seek to uphold the college motto
-					on the corporate seal, Christus Primatum Tenens (``Christ holding Preeminence'').
+					It is essential that trustees be persons of genuine Christian faith, who accept without reservation the Articles of Faith, and seek to uphold the college motto on the corporate seal, Christus Primatum Tenens (``Christ holding Preeminence'').
 					\donNote{capitalization}
 				}
 
 			\end{enumerate}
 		\subsubsection{Administration}
-			\begin{enumerate}[label=\alph*)]
+			\begin{enumerate}
 				\item{The Board assigns certain powers and authority to the administration of the College and to the faculty. The faculty, meeting in regular session, has authority to recommend changes in policy and programs to the administration and to the Board.}
 				\item{Organization Chart (See Appendices)
 				\donNote{where are the appendices?}
 				\paragraph{President}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}: To serve as chief executive officer of the College and to exercise all executive powers not explicitly reserved to the Trustees.  }
 						\item{\underline{Term}: Appointed annually by the Board of Trustees.  }
 						\item{\underline{Accountability}: Accountable directly to the Board of Trustees.  }
 						\item{\underline{Salary}: Remunerated as recommended and approved by the Board of Trustees.  }
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to the Trustees:
-									\begin{enumerate}[label=\alph*)]
+									\begin{enumerate}
 										\item{To make regular reports to the Board of Trustees to enable them to arrive at informed judgments.}
 										\item{To engage the Trustees in periodic review of institutional goals, policies and programs.}
 										\item{To recommend to the Board of Trustees for appointment members of the Executive Team and all full-time faculty members with suggested rank and compensation.}
 									\end{enumerate}
 								}
 								\item{Related to College Management:
-									\begin{enumerate}[label=\alph*)]
+									\begin{enumerate}
 										\item{To act on behalf of the Board of Trustees on all College matters subject to its direction.}
 										\item{To provide vision and leadership for the faculty and administration in formulating educational and support programs.}
 										\item{To oversee the operation and development of the institution as a whole.}
@@ -313,7 +313,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 									\end{enumerate}
 								}
 								\item{Related to College Constituencies:
-									\begin{enumerate}[label=\alph*)]
+									\begin{enumerate}
 										\item{To represent and interpret the College and its programs to internal and external constituencies.}
 										\item{To seek support for the College necessary to achieve the institution's mission and goals.}
 									\end{enumerate}
@@ -394,7 +394,6 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 							\end{enumerate}
 						}
 					\end{enumerate}
-					\donNote{Copyedit stopped here}
 					\subsubparagraph{Dean of Curriculum and Educational Effectiveness}
 					\begin{enumerate}
 						\item{\underline{Function}:  Within the academic program, the Dean of Curriculum and Educational Effectiveness has primary responsibility over curriculum development, program review and assessment.}
@@ -417,24 +416,24 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 					\subsubparagraph{Vice Provost}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}:  To coordinate and manage the academic planning and budget process, and to oversee institutional research.}
 						\item{\underline{Term}:  Appointed annually by the Provost with approval of the President.}
 						\item{\underline{Accountability}:  Directly accountable to the Provost.}
 						\item{\underline{Salary}:  As recommended by the Provost and approved by the President}
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to academic planning and budget
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To work closely with academic department chairs and cost-center managers that report to the Provost in soliciting annual budget and CIP requests.}
 										\item{To work with the Provost in developing prioritizing budget and CIP requests for the academic area.}
-										\item{Monitor academic budgets throughout the year and approve spending requests}
+										\item{Monitor academic budgets throughout the year and approve spending requests.}
 										\item{Work with the Provost on matters related to faculty compensation.}
 										\item{Represent the Provost on the Faculty Salary and Benefits Committee, and other committees as designated.}
 									\end{enumerate}
 								}
 								\item{Related to institutional research
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{Collect data from various campus sources.}
 										\item{Maintain appropriate data from other institutions for comparative and planning purposes.}
 										\item{Develop and maintain a College Factbook, working with college vice presidents to ensure accuracy and thoroughness.}
@@ -446,15 +445,15 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 					\subsubparagraph{Director of Off-Campus Programs}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}:  the Director of Off-Campus Programs has primary responsibility over the planning, development and management of Westmont's off-campus programs, including faculty-led semester-long and Mayterm programs.}
 						\item{\underline{Term}:  Appointed annually by the Provost with the approval of the President.}
 						\item{\underline{Accountability}:  Directly accountable to the Provost.}
 						\item{\underline{Salary}:  As recommended by the Provost and approved by the President.}
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to Westmont Sponsored and Approved Travel Programs
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{Chair the Off-Campus Programs Committee, overseeing those issues for which the committee has primary responsibility.}
 										\item{Prepare and supervise expenditures of the budgets for the office, and any semester-long Westmont-sponsored travel program.}
 										\item{Formulate, in conjunction with the appropriate committees, policy regarding risk and safety management for students involved in Off-Campus Programs.}
@@ -463,7 +462,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 									\end{enumerate}
 								}
 								\item{ Related to Supervision, Guidance and Advisory Roles
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To provide supervision and guidance to the Coordinator of Off-Campus Programs.}
 										\item{To provide supervision and guidance to the Director of Westmont's Urban Program.}
 									\end{enumerate}
@@ -472,12 +471,12 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 					\subsubparagraph{Department Chair}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}:  To give leadership for and coordinate the activities of the academic department.}
 						\item{\underline{Appointment Procedures}:  Department chairs are appointed by the Provost after consultation with all faculty members within the department.  Preferably department chairs should be tenured and hold the rank of associate professor or higher.}
 						\item{\underline{Term}:  Appointments are normally for three-year terms with the possibility of renewal.}
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Provide leadership and immediate oversight of the educational program of the department}
 								\item{Supervise and coordinate ongoing program review and assessment which includes the timely submission of all required reports to ensure continued departmental health and progress.}
 								\item{Coordinate the administrative affairs of the department and serve as liaison to other departments of the College (e.g., working with the Registrar's Office and Director of Advising in the assignment of advisees, facilitating new student recruitment with the Admissions Office).}
@@ -487,7 +486,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 								\item{Conduct department business through regular meetings.}
 								\item{Work with the library staff in the ordering of books and other instructional materials.}
 								\item{Work with the Provost in the recruitment of full-time faculty members.}
-								\item{Oversee and implement probational faculty development procedures as outlined in the Faculty Handbook (2.2.1.4).}
+								\item{Oversee and implement probational faculty development procedures as outlined in the Faculty Handbook, \autoref{sec:PromotionEvaluationProcedure}.}
 								\item{Be a vehicle of communication for departmental faculty concerning faculty rights and responsibilities.}
 								\item{Assist the Provost in the mentoring of new department chairs.}
 								\item{Recruit, orient, supervise and evaluate departmental secretaries and support staff.}
@@ -495,23 +494,23 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 				\subparagraph{Vice President for Administration and Planning}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}:  To coordinate and facilitate administrative services and oversee the offices of information technology, human resources and auxiliary services.}
 						\item{\underline{Term}:  Appointed annually by the President with the approval of the Board of Trustees.}
 						\item{\underline{Accountability}:  Directly accountable to the President.}
 						\item{\underline{Salary}:  As recommended by the President and approved by the Board of Trustees.}
 						\item{\underline{Responsibilities and Duties}:  Under the overall direction of the President, the Vice President for Administration
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to the President
-									\begin{enumerate}[label=(\alph*)]
-										\item{To work closely with the President on matters of College policy and direction, in general, and advise specifically on the status of all aspects of the College under his supervision.}
+									\begin{enumerate}
+										\item{ \donNote{his or her} To work closely with the President on matters of College policy and direction, in general, and advise specifically on the status of all aspects of the College under his supervision.}
 										\item{To serve as College liaison with legal counsel.}
 									\end{enumerate}
 								}
 								\item{Related to Supervision, Guidance, and Advisory Roles:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To provide direct administrative supervision over the following:
-											\begin{enumerate}[label=()\arabic*)]
+											\begin{enumerate}
 												\item{Director of Information Technology}
 												\item{Director of Human Resources}
 												\item{Director of Auxiliary Services}
@@ -524,15 +523,15 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 				\subparagraph{Vice President for Finance}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}: To manage the financial and business operations of the College in a manner which adequately supports the educational programs.}
 						\item{\underline{Term}: Appointed annually by the President with the approval of the Board of Trustees.}
 						\item{\underline{Accountability}: Directly accountable to the President.}
 						\item{\underline{Salary}: As recommended by the President and approved by the Board of Trustees.}
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to the President:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To advise the President in matters of College policy in general, and business operations in particular.}
 										\item{To report periodically to the President on the status of all aspects of the College under this Vice President's supervision.}
 										\item{To formulate financial and business policies and regulations for recommendations to the President.}
@@ -542,7 +541,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 									\end{enumerate}
 								}
 								\item{Related to Supervision, Guidance, and Advisory Roles:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{Fiscal Affairs}
 										\item{Property and Facilities}
 										\item{Management Systems}
@@ -553,21 +552,21 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 				\subparagraph{Vice President for Advancement}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}:  To relate Westmont College and its objectives to its constituent publics, and relate those publics and their resources to the College and its objectives, and to secure the favorable public opinion and resources necessary to adequately support Westmont in its program of Christian higher education.}
 						\item{\underline{Term}:  Appointed annually by the President with the approval of the Board of Trustees.}
 						\item{\underline{Accountability}:  Directly accountable to the President.}
 						\item{\underline{Salary}:  As recommended by the President and approved by the Board of Trustees.}
 						\item{\underline{Responsibilities and Duties}:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to the President:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To advise the President in matters of College policy, and general affairs in particular.}
 										\item{To report periodically to the President on the status of all aspects of the College under his or her administrative supervision.}
 									\end{enumerate}
 								}
 								\item{Related to Supervision, Guidance and Advisory Roles:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{Public Affairs Department}
 										\item{Development Programs}
 										\item{Resource Development Programs}
@@ -580,23 +579,23 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						}
 					\end{enumerate}
 				\subparagraph{Vice President for Student Life}
-					\begin{enumerate}[label=\alph*)]
+					\begin{enumerate}
 						\item{\underline{Function}: To coordinate the student life programs in a manner conducive to maximum human growth and development.}
 						\item{\underline{Term}: Appointed annually by the President with the approval of the Board of Trustees.}
 						\item{\underline{Accountability}: Directly accountable to the President.}
 						\item{\underline{Salary}: As recommended by the President and approved by the Board of Trustees.}
 						\item{Responsibilities and Duties:
-							\begin{enumerate}[label=\arabic*)]
+							\begin{enumerate}
 								\item{Related to the President:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To serve as a member of the Executive Team, providing advice on matters of College policy, especially in the area of student life.}
 										\item{To assist the President in representing student needs and programs to the Student Life Committee of the Board of Trustees.}
 									\end{enumerate}
 								}
 								\item{Related to Supervision, Guidance, and Advisory Roles:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To provide administrative supervision over:
-											\begin{enumerate}[label=(\arabic*)]
+											\begin{enumerate}
 												\item{Residence Life}
 												\item{Counseling Services}
 												\item{Health Services}
@@ -609,7 +608,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 									\end{enumerate}
 								}
 								\item{Related to Student Life:
-									\begin{enumerate}[label=(\alph*)]
+									\begin{enumerate}
 										\item{To provide leadership in the formulation and implementation of policies and programs which provide for the orderly development of campus student life.}
 										\item{To prepare and administer on-going policies for student life as developed in the \emph{Student Handbook}.}
 										\item{To provide liaison with the Faculty in efforts to develop cooperative programs to enhance the mission of the College.}
@@ -640,7 +639,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 				The Board of Trustees has final authority to approve substantive changes in institutional purposes, policies, and programs.  The Board normally exercises its responsibility on campus through the President, who is expected to provide leadership within the entire educational program of the College.
 
 			\paragraph{Primary Authority}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 
 					\item{ The faculty, together with the Provost, govern curriculum
 						and formulate academic policies through formal action in
@@ -651,14 +650,14 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						through the Academic Senate. The following items require
 						submission by the Faculty Council for action by the full
 						faculty for implementation:
-						\begin{enumerate}[label=\arabic*)]
+						\begin{enumerate}
 							\item{ the addition or deletion of a major;}
 
 							\item{ the addition or deletion of a complete field of study, including any programs which
 								do not fall within the direct supervision of an existing academic department or any
 								Westmont-operated semester-long off-campus study program;}
 
-							\item{ the addition or deletion nf a graduation requirement;}
+							\item{ the addition or deletion of a graduation requirement;}
 
 							\item{ the addition or deletion of a general education requirement;}
 
@@ -678,7 +677,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					}
 				\end{enumerate}
 			\paragraph{Shared Authority}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{ The faculty share with administrative officers authority for developing standards and policies
 						for the recruitment and admission of students. In addition, they are authorized and expected to be
 						involved in the formulation of other College policies including student life, public relations,
@@ -691,13 +690,14 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 						Chair of the Faculty Council.  As Vice President of the College, the Provost represents
 						administrative interests and decisions to the faculty.}
 				\end{enumerate}
+				\donNote{Copyedit stopped here}
 	\subsection{Committee Structure and Responsibilities}
 		\subsubsection{Committees of the Board of Trustees}
 			Committees are delegated certain responsibilities for more effective handling of the Board's work.  Committees study proposals, hear constituents before recommendations are formed, receive reports, and formulate recommendations to present to the full Board.
 			\paragraph{Executive Committee}
 				The Executive Committee is composed of elected Board officers plus the chair of each regular committee.  The Executive Committee may transact business for the Board between regular Board meetings.  All such transactions are subject to the approval of the full Board at their next meeting.
 			\paragraph{Academic Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Keep abreast of curricular and program changes and be aware of, and able to explain, the rationale behind the changes.}
 					\item{Consult with and advise the Provost concerning academic matters.}
 					\item{Understand the policies relating to promotion, tenure, and sabbatical leaves and evaluate College recommendations concerning the granting of promotion, tenure, and sabbaticals in order to make recommendations to the Board of Trustees concerning action on these matters.}
@@ -706,7 +706,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					\item{Approve policies that provide grievance procedures for faculty appeal of any perceived injustices.}
 				\end{enumerate}
 			\paragraph{Student Life Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Review all student life programs and plans and make any appropriate recommendations to the Board.}
 					\item{Review student life expectations policies and conduct procedures and be able to defend and explain them.}
 					\item{Consult with and advise the Vice President for Student Life concerning student life matters.}
@@ -714,7 +714,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					\item{Establish communication with students and approve policies for student appeal of any perceived injustices.}
 				\end{enumerate}
 			\paragraph{Membership Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Serve as Nominating Committee for Board officers.}
 					\item{Serve as Nominating Committee for Board members, both for new and reelected.}
 					\item{Assess the Board's needs for new members and maintain a roster of prospective members.}
@@ -724,7 +724,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					\item{Oversee assessment of trustee performance both individual and corporate.}
 				\end{enumerate}
 			\paragraph{Finance Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Review annual operating budget and recommend action to the Board or Executive Committee.}
 					\item{Review and approve revisions to the operating budget which do not result in a deficit.}
 					\item{Review and authorize allocations of the contingency budget.}
@@ -740,7 +740,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					\item{Consult with and advise the Vice President for Finance concerning fiscal matters.}
 				\end{enumerate}
 			\paragraph{Development Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Develop an understanding of the role fund raising plays in the life of the College.}
 					\item{Educate Board members of their role in acquiring gifts.}
 					\item{Review the resource development program to ensure that there are sufficient resources to meet operating costs and maintain institutional integrity as to facilities and programs.}
@@ -751,32 +751,32 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					\item{Consult with and advise the Vice President for Development concerning development matters.}
 				\end{enumerate}
 			\paragraph{Buildings and Grounds Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Review and recommend approval of a Master Plan for the physical campus which includes both present and anticipated needs.}
 					\item{Review reports on physical plant utilization, maintenance, and upkeep.}
 					\item{Review requests for new construction or remodeling and approve architects, plans, and building schedules.}
 				\end{enumerate}
 			\paragraph{Personnel Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Oversee the search and screening process and make the final recommendation in selection of the College President, generally working through a representative committee including faculty, students, and other constituents.}
 					\item{Periodically review the work of the College President with special sensitivity to the fragile status of college presidents and the need to offer strong Board support as well as clearly-stated performance standards.}
 					\item{Periodically review with the President the work of the members of his or her staff.}
 				\end{enumerate}
 			\paragraph{Planning Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Review all planning documents produced by the College, suggest planning needs if these are not being addressed by campus, and recommend planning policies to the Board.}
 					\item{Provide an on-going strategic planning process for the Board of Trustees.}
 					\item{Review planning assumptions, statements of institutional mission and goals, faculty and financial needs, and evaluate the success of planning procedures.}
 				\end{enumerate}
 			\paragraph{Diversity Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Advise the Board Chair on the leadership of the President and the Executive Team in implementing the College's long-range priority on diversity.}
 					\item{Monitor and report to the Board on campus efforts to achieve the College's diversity goals.}
 					\item{Educate the Board about the issues, challenges, and opportunities related to providing our students with a more multicultural education.}
 					\item{Recommend ways in which the Board and its members can assist the College in reaching its diversity goals.}
 				\end{enumerate}
 			\paragraph{Historic Preservation Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{Ensure that the traditions, culture and historical significance of the College are preserved and where appropriate, improved and enhanced.}
 					\item{Promote these standards and expectations to College committees that plan and design physical improvements, capital construction and capital maintenance.}
 					\item{Consult with and advise the administration about appropriate historic preservation policies and about promoting public awareness and celebration of the College's traditions and heritage.}
@@ -784,9 +784,9 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 				\end{enumerate}
 		\subsubsection{Committees of College Administration}
 			\paragraph{Strategic Planning Committee}
-				\begin{enumerate}[label=\alph*)]
+				\begin{enumerate}
 					\item{\underline{Membership}:
-						\begin{enumerate}[label=\arabic*)]
+						\begin{enumerate}
 							\item{President}
 							\item{Chair, Board of Trustees}
 							\item{Chair, Trustee Planning Committee}
@@ -1027,7 +1027,6 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 							\end{enumerate}
 						}
 					\end{enumerate}
-					\donNote{Stopped here}
 			\paragraph{Administrative}
 				\subparagraph{Faculty Council}
 					\begin{enumerate}[label=\alph*)]
@@ -1673,6 +1672,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 					}
 				\end{enumerate}
 			\paragraph{Procedure}
+				\label{sec:PromotionEvaluationProcedure}
 				Personnel Committee Reviews \& Recommendations.  Typically, the intermediate tenure review will occur in the spring semester of the third year, and the final tenure review in the spring of the sixth year.  Promotion reviews not connected with the tenure process typically will occur in the fall semester.
 				\begin{enumerate}[label=\alph*)]
 					\item{For each promotion and tenure review, each faculty member being reviewed is responsible to demonstrate sufficient progress toward tenure and promotion in the form of a portfolio presented to the Personnel Committee. Required items include:
@@ -2515,39 +2515,42 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 		---------------
 
 
-
+		\newpage
 \section{About this document}
-	\begin{wrapfigure}{o}{0.3\textwidth}
+	\begin{wrapfigure}{h}[0cm]{0.3\textwidth}
+		\centering
 		\vspace{-30pt}
-		\begin{centering}
-			\includegraphics[width=2.5in]{images/qr_code_github_repo.png}
-		\end{centering}
-		\vspace{-30pt}
-		\caption{Link to document change management system on Github}
+		\fbox{\includegraphics[width=2in]{images/qr_code_github_repo.png}}
+		\caption[Docment files on Github]{Document files on Github}
 		\label{fig:qr_repo}
-		\vspace{-10pt}
 	\end{wrapfigure}
+
 	This document is an official governing document for Westmont College so changes are carefully managed and subject to a formal approval process.
 	To support the integrity of the document, it is stored in a Github repository which functions as its change management system and supports transparent visibility into any document alterations.
-	The original LaTeX source documents can be found in that repository located here: \href{https://github.com/djp3/WestmontFacultyHandbook}{https://github.com/djp3/WestmontFacultyHandbook} (qr code in Figure \ref{fig:qr_repo}).
+	The original LaTeX source documents can be found in that repository located \href{https://github.com/djp3/WestmontFacultyHandbook}{here}:	(qr code in Figure \ref{fig:qr_repo}).
 
 	\subsection{Current Version}
-		\label{sec:CurrentVersion}
-		\begin{wrapfigure}{o}{0.3\textwidth}
-			\vspace{-30pt}
-			\begin{center}
-				\includegraphics[width=2.5in]{images/qr_code_current_release.png}
-			\end{center}
-			\vspace{-30pt}
-			\caption{Most recent official version of this document}
-			\label{fig:qr_current}
-			\vspace{-10pt}
-		\end{wrapfigure}
-		To make sure that you have the latest version of this document, compare the version and date in the header of this document with the dates of the official versions that have been released.
-		All released versions can be found in the releases folder of the Github repository: \href{https://github.com/djp3/WestmontFacultyHandbook/tree/main/releases}{link}.
 
-		As a convenience, the following link is designed to connect to the most current version of the handbook:
-		\href{https://github.com/djp3/WestmontFacultyHandbook/blob/main/releases/handbook.current.pdf}{current version} (qr code in Figure \ref{fig:qr_current}).
+		To make sure that you have the latest version of this document, compare the version and date in the
+		header of this document with the dates of the official versions that have been released.
+		All released versions can be found in
+		\href{https://github.com/djp3/WestmontFacultyHandbook/tree/main/releases}{the releases folder of the Github repository}.
+
+		\begin{wrapfigure}{h}[0cm]{0.3\textwidth}
+			\centering
+			\vspace{-30pt}
+			\fbox{\includegraphics[width=2in]{images/qr_code_current_release.png}}
+			\caption[placeholder]{Most recent official version of this document}
+			\label{fig:qr_current}
+		\end{wrapfigure}
+
+		As a convenience, there is a direct link is designed to
+		\href{https://github.com/djp3/WestmontFacultyHandbook/blob/main/releases/handbook.current.pdf}{the most current version of the handbook}
+		(qr code in Figure \ref{fig:qr_current}).
+
+		This is an intentonally misspelled sentence.
+
+		\label{sec:CurrentVersion}
 
 	\subsection{Proposing Changed}
 		Make a pull request.
@@ -2556,7 +2559,7 @@ To obtain the most recent version of this document see \autoref{sec:CurrentVersi
 	\begin{enumerate}
 		\item{{\bfseries 9/1/2021} The transcription from the previous \href{https://drive.google.com/file/d/1sUKRM3r9zkCWEorlwJbBRCfkCduS1yGL/view}{Word Document}, dated September 24,2020 was completed. This change tracked version became the official copy.}
 	\end{enumerate}
-	\cite{Winner}
+	\cite{Winner1980}
 
 
 
