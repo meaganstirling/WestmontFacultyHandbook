@@ -12,3 +12,5 @@
 *.DS_Store
 workspace.code-workspace
 spellright.dict
+cspell-custom-words.txt
+cspell.config.yaml
